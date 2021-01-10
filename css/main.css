@@ -49,11 +49,6 @@ table {
 }
 
 
-.seoh1 {
-    position: absolute;
-    opacity: 0;
-}
-
 a:hover,
 a:focus {
     text-decoration: none !important;
@@ -68,12 +63,10 @@ a:focus {
 
 
 
-/*  開始  */
+
+/*Menu overlay CSS*/
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
-body {
-  background: #f7f0d2;
-  overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
 .container {
   position: absolute;
@@ -113,10 +106,37 @@ body {
   width: 100%;
 }
 
-h1 {
+.index_sec h1 {
   position: relative;
   text-align: center;
-  font-family: "Vollkorn", serif;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 80px;
+  height: 60px;
+  color: #7d7119;
+}
+
+
+
+/*打字*/
+.typing-demo {
+  width: 11ch;
+  animation: typing 4s steps(11), blink .6s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #7d7119;
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 80px;
+  margin: 0 auto;
+}
+
+
+.index_sec p{
+  max-width:400px; 
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .button_container {
@@ -272,7 +292,7 @@ h1 {
 
 
 
-
+/*noise background CSS*/
 
 .noise:after {
   background-image: url("https://i.postimg.cc/W4pCBbz0/noise.png");
@@ -320,3 +340,28 @@ h1 {
         transform: translate(5%)
     }
 }
+
+
+
+
+/*打字用到的效果*/
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+
+
+
+
