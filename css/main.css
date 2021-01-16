@@ -61,7 +61,7 @@ a:focus {
   display: flex | inline-flex;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+TC:wght@300;400;500&family=Potta+One&display=swap');
 
 
 /*打字用到的效果*/
@@ -390,6 +390,16 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   text-align: center;
 }
 
+.project_title{
+  position: relative;
+    text-align: left;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 120px;
+    color: #222/*#7d7119;*/
+    padding: 2%;
+}
+
+
 .pro_title{
   background: #f7f7ec;
   width: 100%;
@@ -474,7 +484,12 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
 }
 
 
-
+.project_top h1{
+  color: #222;
+  font-family: 'Potta One', cursive;
+  font-size: 50px;
+  padding: 10%;
+}
 
 
 
