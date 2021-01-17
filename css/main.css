@@ -148,6 +148,37 @@ a:focus {
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
+
+@font-face {
+  font-family: GenJyuuGothic-Bold;
+  src: local("GenJyuuGothic-Bold"),
+  url(font/GenJyuuGothic-Bold.ttf);   /* 相對於 CSS 設定檔的位置 */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: GenJyuuGothic-Medium;
+  src: local("GenJyuuGothic-Medium"),
+  url(font/GenJyuuGothic-Medium.ttf);   /* 相對於 CSS 設定檔的位置 */
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: GenJyuuGothic-Normal;
+  src: local("GenJyuuGothic-Normal"),
+  url(font/GenJyuuGothic-Normal.ttf);   /* 相對於 CSS 設定檔的位置 */
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: GenJyuuGothic-Light;
+  src: local("GenJyuuGothic-Light"),
+  url(font/GenJyuuGothic-Light.ttf);   /* 相對於 CSS 設定檔的位置 */
+  font-weight: 300;
+}
+
+
 .menu_container {
   position: absolute;
   width: 100%;
@@ -192,7 +223,7 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   font-family: 'East Sea Dokdo', cursive;
   font-size: 80px;
   height: 60px;
-  color: #7d7119;
+  color: rgba(255,255,255,.8);
 }
 
 
@@ -203,10 +234,11 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   animation: typing 4s steps(10), blink .6s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #7d7119;
+  border-right: 3px solid #fff5af;
   font-family: 'East Sea Dokdo', cursive;
-  font-size: 64px;
+  font-size: 66px;
   margin: 0 auto;
+  color: #840505;
 }
 
 
@@ -217,6 +249,7 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   font-size: 18px;
   margin: 0 auto;
   margin-top: 20px;
+  color: #630b0b;
 }
 
 .button_container {
@@ -245,7 +278,7 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   background: #FFF;
 }
 .button_container span {
-  background: #515208;/*#FF5252;*/
+  background: #5a3b3b;/*#FF5252;*/
   border: none;
   height: 5px;
   width: 100%;
@@ -264,7 +297,7 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
 
 .overlay {
   position: fixed;
-  background: #515208; /*#FF5252;*/
+  background: radial-gradient(circle farthest-corner at left,#f9ab69,#ca453b);
   top: 0;
   left: 0;
   width: 100%;
@@ -332,7 +365,7 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   text-decoration: none;
   overflow: hidden;
   /*以下是給hover用的*/
-    background-image: linear-gradient(180deg,transparent 20%,#7d7d25 0);
+    background-image: linear-gradient(180deg,transparent 20%,#921515 0);
     background-size: 0 100%;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -484,13 +517,40 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
 }
 
 
-.project_top h1{
-  color: #222;
-  font-family: 'Potta One', cursive;
-  font-size: 50px;
-  padding: 10%;
+
+.detail_top{
+  background: url(../images/web_top.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding: 0;
+  min-height: 1000px;
+  text-align: center;
 }
 
+
+.detail_top .row{
+  margin:0; 
+}
+
+.detail_top h1{
+  color: #333;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 50px;
+  padding-top: 10%;
+  padding-bottom: 20px;
+}
+
+
+.jobs{
+  display: inline-block;
+  border: 1px solid #72a9dc;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #4c8ac3;
+  margin: 10px 6px;
+  font-family: GenJyuuGothic-Normal;
+  font-size: 16px;
+}
 
 
 
@@ -498,6 +558,10 @@ header .container a:hover:after, .container a:focus:after, .container a:active:a
   .index_sec p{
     max-width:360px;
     font-size: 16px;
+  }
+  .detail_top h1{
+  font-size: 36px;
+  padding-top: 40%;
   }
 }
 

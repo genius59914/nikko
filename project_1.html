@@ -26,6 +26,15 @@
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/function.js"></script>
 </head>
+<style>
+  .overlay{
+  background:radial-gradient(circle farthest-corner at left,#1b295d,#3c8667);
+  }
+  .overlay ul li a {
+  /*以下是給hover用的*/
+    background-image: linear-gradient(180deg,transparent 20%,#01313c 0);
+  }
+</style>
 
 <body>    
 <header>
@@ -49,16 +58,28 @@
 
 
 <!-- 專案們最上方的intro opening -->
-  <div class="container_fluid project_top">
+  <div class="container_fluid detail_top">
     <div class="row">
       <div class="col-12">
-        <h1>設計流程</h1></div>
+        <h1>血糖血壓機紀錄</h1>
+        <hr>
+        <div class="jobs">使用者流程</div>
+        <div class="jobs">UI 設計</div>
+        <div class="jobs">User Flow</div>
+      </div>
     </div>
   </div>
+
+
+
+
+
+
 
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
 </body>
+
 </html>
