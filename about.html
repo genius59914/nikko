@@ -15,8 +15,8 @@
 <!-- Fontfamily -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -25,21 +25,18 @@
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/function.js"></script>
 </head>
-
 <style type="text/css">
-  body {
-  background: radial-gradient(circle farthest-corner at left,#ff5757,#ffd0af);/*#fff4a9;*/
-  overflow: hidden;
-}
-
+  .project_title{
+    font-size: 80px;
+    cursor: default;
+    padding-left: 0px;
+  }
+  .container_fluid .row{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 </style>
-<body class="noise">    
-  <div class="menu_container index_sec">
-    <h1>Hello!</h1>
-    <div class="typing-demo">I'm NIKKO.</div>
-    <p>A UI/UX Designer based in Taipei. Focus on product design and user experience.</p>
-    <!-- <h2>2018-2021</h2> -->
-  </div>
+<body style="background-color: #f9f8f6;">    
 <header>
   <div class="button_container" id="toggle">
     <span class="top"></span>
@@ -58,6 +55,40 @@
     </nav>
   </div>
 </header>
+
+
+<!-- App專案的卡片-->
+  <div class="container_fluid">
+    <div class="row">
+      <div class="col-12 project_title">
+        ABOUE ME!
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="about_left">
+        <img src="images/me.png" alt="">
+        </div>
+        <!-- <div class="contact_btn">聯絡我！</div> -->
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="about_right">
+        <h1 class="project_title" style="color: #deddd7;">I'm Nikko</h1>
+        <p>&emsp;&emsp;來自宜蘭的海邊小漁村，大學就讀銘傳大學產品設計，輾轉接觸UI/UX產業，並先後在接案公司與醫療科技產品公司中擔任UI/UX設計師，實際參與許多App與網頁專案設計。<br>規劃了此作品集，從設計到切版，統整主導完成的實例．</p>
+        <ul class="skills">
+          <span class="sm_title">TOOL</span>
+          <li>熟悉 XD｜sketch｜UX pin｜illustrator｜Photoshop</li>
+          <li>3D建模軟體Rhino / Pro-e / Keyshot</li>
+          <span class="sm_title">SKILL</span>
+          <li>熟悉App原生UIkit</li>
+          <li>基本html｜css切版能力</li>
+          <li>繪製 prototype｜wireframe｜userflow</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
